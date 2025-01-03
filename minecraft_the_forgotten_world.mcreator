@@ -1,0 +1,781 @@
+{
+  "mod_elements": [
+    {
+      "name": "RadioactiveWater",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/fluid/RadioactiveWaterFluid.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/fluid/types/RadioactiveWaterFluidType.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/RadioactiveWaterBlock.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/radioactive_water_bucket.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/RadioactiveWaterItem.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/radioactive_water.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/radioactive_water.json"
+        ]
+      }
+    },
+    {
+      "name": "RadioactiveOakBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_oak_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/configured_feature/radioactive_oak_biome_tree.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/placed_feature/radioactive_oak_biome_tree.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/biome/radioactive_oak_biome.json"
+        ]
+      }
+    },
+    {
+      "name": "TheForgottenWorld",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_forgotten_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/dimension/TheForgottenWorldDimension.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/teleporter/TheForgottenWorldPortalShape.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/the_forgotten_world_portal_ew.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/dimension/the_forgotten_world.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/the_forgotten_world_portal.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/teleporter/TheForgottenWorldTeleporter.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/the_forgotten_world.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/TheForgottenWorldPortalBlock.java",
+          "src/main/resources/data/minecraft_the_forgotten_world/dimension_type/the_forgotten_world.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/the_forgotten_world_portal_ns.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/TheForgottenWorldItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RadioactiveWaterDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_water_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/damage_type/radioactive_water_damage.json"
+        ]
+      }
+    },
+    {
+      "name": "RadioactiveWaterMobplayerCollidesBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_water_mobplayer_collides_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/RadioactiveWaterMobplayerCollidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RadioactivePotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RadioactiveEffectEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_effect_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/RadioactiveEffectEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RadioactiveEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/potion/RadioactiveEffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "RadioActivePotionRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radio_active_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/recipes/brewing/RadioActivePotionRecipeBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "BucketOfRadioactiveMass",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucket_of_radioactive_mass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/bucket_of_radioactive_mass.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/BucketOfRadioactiveMassItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BucketOfRadiationRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucket_of_radiation_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/bucket_of_radiation_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadioactiveSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/RadioactiveSwordItem.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/radioactive_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "RadioActiveSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radio_active_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/radio_active_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadioactiveSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/RadioactiveSwordLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TechnobladeRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technoblade_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TechnobladeRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Technoblade",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technoblade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/TechnobladeItem.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/technoblade.json"
+        ]
+      }
+    },
+    {
+      "name": "TimeMachine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_machine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/time_machine.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/time_machine.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/TimeMachineBlock.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/time_machine.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/time_machine.json"
+        ]
+      }
+    },
+    {
+      "name": "TimeMachineGUITheAmericanWarPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_machine_gui_the_american_war_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineGUITheAmericanWarPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimeMachineGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_machine_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/network/TimeMachineGUIButtonMessage.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/client/gui/TimeMachineGUIScreen.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/inventory/TimeMachineGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "TimeMachineGUISelfDestructPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_machine_gui_self_destruct_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineGUISelfDestructPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Policeguard",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "policeguard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/client/renderer/PoliceguardRenderer.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/policeguard_spawn_egg.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/entity/PoliceguardEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "TimeMachineSourceTP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_machine_source_tp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineSourceTPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "USAFlag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usa_flag",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/usa_flag.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/usa_flag.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/USAFlagBlock.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/usa_flag.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/usa_flag.json"
+        ]
+      }
+    },
+    {
+      "name": "Uranium",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/UraniumBlock.java",
+          "src/main/resources/data/minecraft_the_forgotten_world/forge/biome_modifier/uranium_biome_modifier.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/uranium.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/uranium.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/placed_feature/uranium.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/configured_feature/uranium.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/uranium.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/uranium.json"
+        ]
+      }
+    },
+    {
+      "name": "UraniumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/uranium_ingot.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/UraniumIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BritishAC74Bomb",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_ac_74_bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/british_ac_74_bomb.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/british_ac_74_bomb.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/british_ac_74_bomb.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/british_ac_74_bomb.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/BritishAC74BombBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "BritishAC74BombBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_ac_74_bomb_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/BritishAC74BombBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BritishAC79LandMineEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_ac_79_land_mine_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/BritishAC79LandMineEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BritishAC79LandMine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_ac_79_land_mine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/british_ac_79_land_mine.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/BritishAC79LandMineBlock.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/british_ac_79_land_mine.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/british_ac_79_land_mine.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/british_ac_79_land_mine.json"
+        ]
+      }
+    },
+    {
+      "name": "USA",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usa",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AntisicknessPillRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antisickness_pill_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/AntisicknessPillRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TouchGrass",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "touch_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/advancements/touch_grass.json"
+        ]
+      }
+    },
+    {
+      "name": "ASusTime",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_sus_time",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/advancements/a_sus_time.json"
+        ]
+      }
+    },
+    {
+      "name": "BucketOfGunpowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucket_of_gunpowder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/bucket_of_gunpowder.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/BucketOfGunpowderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BucketOfGunpowderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucket_of_gunpowder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/bucket_of_gunpowder_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BritishAC74BombRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_ac_74_bomb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/british_ac_74_bomb_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BritishAC74LandMineRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_ac_74_land_mine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/british_ac_74_land_mine_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "UKFlag",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uk_flag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/uk_flag.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/uk_flag.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/uk_flag.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/uk_flag.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/UKFlagBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "UK",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uk",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "log1",
+      "files": [
+        "20240814-1755-59.7466670"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "technoblade",
+      "files": [
+        "audio-_1_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:RadioactiveOakBiome"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:RadioactiveWater"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Uranium"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:RadioactiveOakBiome"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:RadioactiveOakBiome"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_standard": [
+      "~CUSTOM:RadioactiveOakBiome"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:RadioactiveSword"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:Technoblade"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "death.attack.radioactive_water_damage.player": "%1$s died whilst trying to escape %2$s",
+      "item.minecraft_the_forgotten_world.technoblade.desc": "\"Mega Walls\" by Technoblade",
+      "advancements.touch_grass.descr": "Get 5 or more netherite blocks",
+      "block.minecraft_the_forgotten_world.uranium": "Uranium Ore",
+      "item.minecraft.lingering_potion.effect.radioactive_potion": "Lingering Potion of Radioactive Potion",
+      "block.minecraft_the_forgotten_world.time_machine": "Time Machine",
+      "advancements.touch_grass.title": "Touch Grass",
+      "item.minecraft.tipped_arrow.effect.radioactive_potion": "Arrow of Radioactive Potion",
+      "block.minecraft_the_forgotten_world.british_ac_74_bomb": "British AC-74 Bomb",
+      "block.minecraft_the_forgotten_world.usa_flag": "US Flag",
+      "block.minecraft_the_forgotten_world.uk_flag": "UK Flag",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_self_destruct": "Self Destruct",
+      "biome.minecraft_the_forgotten_world.radioactive_oak_biome": "Radioactive Oak Biome",
+      "subtitles.technoblade": "",
+      "item.minecraft_the_forgotten_world.technoblade": "\"Mega Walls\" by Technoblade",
+      "advancements.a_sus_time.title": "A Sus Time",
+      "block.minecraft_the_forgotten_world.radioactive_water": "Radioactive Water",
+      "death.attack.radioactive_water_damage": "%1$s died of radioactive inhaling",
+      "item.minecraft_the_forgotten_world.radioactive_water_bucket": "Radioactive Water Bucket",
+      "entity.minecraft_the_forgotten_world.policeguard": "Police Guard",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_source_time": "Source Time",
+      "advancements.a_sus_time.descr": "Enter the dimension \"The Forgotten World\"",
+      "fluid.minecraft_the_forgotten_world.radioactive_water": "Radioactive Water",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_the_american_war_2039": "The American War - 2039",
+      "item.minecraft.splash_potion.effect.radioactive_potion": "Splash Potion of Radioactive Potion",
+      "item_group.minecraft_the_forgotten_world.usa": "USA",
+      "effect.minecraft_the_forgotten_world.radioactive_effect": "Radioactive Effect",
+      "item.minecraft_the_forgotten_world.bucket_of_radioactive_mass": "Bucket Of Radioactive Mass",
+      "item.minecraft.potion.effect.radioactive_potion": "Potion of Radioactive Potion",
+      "item.minecraft_the_forgotten_world.uranium_ingot": "Uranium Ingot",
+      "item.minecraft_the_forgotten_world.policeguard_spawn_egg": "Police Guard Spawn Egg",
+      "subtitles.log1": "",
+      "item.minecraft_the_forgotten_world.the_forgotten_world": "Teleportation Stick",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_the_american_war": "The American War",
+      "block.minecraft_the_forgotten_world.british_ac_79_land_mine": "British AC-79 Land Mine",
+      "item.minecraft_the_forgotten_world.radioactive_sword": "Radioactive Sword",
+      "death.attack.radioactive_water_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.minecraft_the_forgotten_world.bucket_of_gunpowder": "Bucket Of Gunpowder",
+      "item_group.minecraft_the_forgotten_world.uk": "UK"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "minecraft_the_forgotten_world",
+    "modName": "Minecraft: The forgotten world",
+    "version": "1.0.0",
+    "author": "noahj, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.minecrafttheforgottenworld"
+  },
+  "mcreatorVersion": 202400342716
+}

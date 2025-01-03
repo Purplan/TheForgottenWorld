@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "recipeRetstackSize": 1,
+    "group": "radioactive_mass",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 60,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:RadioactiveWater.bucket"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:BucketOfRadioactiveMass"
+    },
+    "name": "bucket_of_radiation_recipe",
+    "namespace": "mod"
+  }
+}

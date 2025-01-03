@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft_the_forgotten_world:custom/time_machine",
+  "textures": {
+    "all": "minecraft:block/white_concrete",
+    "particle": "minecraft:block/white_concrete",
+    "11": "minecraft_the_forgotten_world:block/texture_11",
+    "12": "minecraft_the_forgotten_world:block/texture_12",
+    "13": "minecraft_the_forgotten_world:block/texture_13",
+    "14": "minecraft_the_forgotten_world:block/texture_14",
+    "15": "minecraft_the_forgotten_world:block/texture_15",
+    "16": "minecraft_the_forgotten_world:block/texture_16",
+    "17": "minecraft_the_forgotten_world:block/texture_17",
+    "18": "minecraft_the_forgotten_world:block/texture_18",
+    "2": "minecraft_the_forgotten_world:block/texture_2",
+    "3": "minecraft_the_forgotten_world:block/texture_3",
+    "4": "minecraft_the_forgotten_world:block/texture_4",
+    "5": "minecraft_the_forgotten_world:block/texture_5",
+    "6": "minecraft_the_forgotten_world:block/texture_6",
+    "7": "minecraft_the_forgotten_world:block/texture_7",
+    "8": "minecraft_the_forgotten_world:block/texture_8",
+    "9": "minecraft_the_forgotten_world:block/texture_9",
+    "10": "minecraft_the_forgotten_world:block/texture_10"
+  },
+  "render_type": "solid"
+}

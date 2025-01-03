@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_the_forgotten_world:block/s189772745713394276_p3855_i147_w750",
+    "up": "minecraft_the_forgotten_world:block/s189772745713394276_p3855_i147_w750",
+    "north": "minecraft_the_forgotten_world:block/s189772745713394276_p3855_i147_w750",
+    "east": "minecraft_the_forgotten_world:block/s189772745713394276_p3855_i147_w750",
+    "south": "minecraft_the_forgotten_world:block/s189772745713394276_p3855_i147_w750",
+    "west": "minecraft_the_forgotten_world:block/s189772745713394276_p3855_i147_w750",
+    "particle": "minecraft_the_forgotten_world:block/s189772745713394276_p3855_i147_w750"
+  },
+  "render_type": "solid"
+}

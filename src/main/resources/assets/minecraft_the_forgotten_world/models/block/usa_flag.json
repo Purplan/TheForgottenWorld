@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft_the_forgotten_world:custom/usa_flag",
+  "textures": {
+    "all": "minecraft_the_forgotten_world:block/flag-united-states-of-america",
+    "particle": "minecraft_the_forgotten_world:block/flag-united-states-of-america",
+    "0": "minecraft_the_forgotten_world:block/flag-united-states-of-america",
+    "1": "minecraft_the_forgotten_world:block/texture-65",
+    "missing": "minecraft_the_forgotten_world:block/"
+  },
+  "render_type": "solid"
+}

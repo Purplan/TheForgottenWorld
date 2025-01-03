@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "flag-united-states-of-america",
+        "1": "texture-65",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

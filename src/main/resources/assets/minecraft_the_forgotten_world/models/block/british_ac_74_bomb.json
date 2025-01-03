@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft_the_forgotten_world:custom/british_ac-74_bomb",
+  "textures": {
+    "all": "minecraft_the_forgotten_world:block/texture_2_british",
+    "particle": "minecraft_the_forgotten_world:block/texture_2_british",
+    "11": "minecraft_the_forgotten_world:block/texture_11_british",
+    "12": "minecraft_the_forgotten_world:block/texture_12_british_1",
+    "13": "minecraft_the_forgotten_world:block/texture_13_british",
+    "14": "minecraft_the_forgotten_world:block/texture_14_british",
+    "15": "minecraft_the_forgotten_world:block/texture_15_british",
+    "16": "minecraft_the_forgotten_world:block/texture_16_british",
+    "17": "minecraft_the_forgotten_world:block/texture_17_british",
+    "18": "minecraft_the_forgotten_world:block/texture_18_british",
+    "19": "minecraft_the_forgotten_world:block/texture_19_british",
+    "0": "minecraft_the_forgotten_world:block/texture_1",
+    "1": "minecraft_the_forgotten_world:block/texture_1",
+    "2": "minecraft_the_forgotten_world:block/texture_2_british",
+    "3": "minecraft_the_forgotten_world:block/texture_3_british",
+    "6": "minecraft_the_forgotten_world:block/texture_16_british",
+    "9": "minecraft_the_forgotten_world:block/texture_9_british",
+    "20": "minecraft_the_forgotten_world:block/texture_20_british"
+  },
+  "render_type": "solid"
+}

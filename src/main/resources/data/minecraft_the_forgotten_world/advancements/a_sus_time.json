@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft_the_forgotten_world:radioactive_water_bucket"
+    },
+    "title": {
+      "translate": "advancements.a_sus_time.title"
+    },
+    "description": {
+      "translate": "advancements.a_sus_time.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "a_sus_time_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft_the_forgotten_world:the_forgotten_world"
+      }
+    }
+  }
+}

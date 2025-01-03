@@ -1,0 +1,18 @@
+{
+  "log1": {
+    "sounds": [
+      {
+        "name": "minecraft_the_forgotten_world:20240814-1755-59.7466670",
+        "stream": false
+      }
+    ]
+  },
+  "technoblade": {
+    "sounds": [
+      {
+        "name": "minecraft_the_forgotten_world:audio-_1_",
+        "stream": false
+      }
+    ]
+  }
+}

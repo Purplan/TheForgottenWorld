@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "flag_of_the_united_kingdom_1-2.svg",
+        "1": "texture_1515",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

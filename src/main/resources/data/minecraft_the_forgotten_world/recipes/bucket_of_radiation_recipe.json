@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "radioactive_mass",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 60,
+  "ingredient": {
+    "item": "minecraft_the_forgotten_world:radioactive_water_bucket"
+  },
+  "result": "minecraft_the_forgotten_world:bucket_of_radioactive_mass"
+}

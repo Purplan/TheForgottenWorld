@@ -1,0 +1,29 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "\"Mega Walls\" by Technoblade",
+    "rarity": "UNCOMMON",
+    "texture": "music_disc_technoblade",
+    "description": "\"Mega Walls\" by Technoblade",
+    "creativeTabs": [
+      {
+        "value": "REDSTONE"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:technoblade"
+    },
+    "lengthInTicks": 1980,
+    "analogOutput": 0,
+    "onRightClickedOnBlock": {
+      "name": "TechnobladeRightclickedOnBlock"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": "CUSTOM:BucketOfGunpowder"
+      },
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": "CUSTOM:BucketOfGunpowder"
+      },
+      {
+        "value": "Blocks.SAND"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BritishAC74Bomb"
+    },
+    "name": "british_ac_74_bomb_recipe",
+    "namespace": "mod"
+  }
+}

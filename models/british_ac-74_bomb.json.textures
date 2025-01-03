@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "texture_11_british",
+        "12": "texture_12_british_1",
+        "13": "texture_13_british",
+        "14": "texture_14_british",
+        "15": "texture_15_british",
+        "16": "texture_16_british",
+        "17": "texture_17_british",
+        "18": "texture_18_british",
+        "19": "texture_19_british",
+        "0": "texture_1",
+        "1": "texture_1",
+        "2": "texture_2_british",
+        "3": "texture_3_british",
+        "6": "texture_16_british",
+        "9": "texture_9_british",
+        "20": "texture_20_british"
+      },
+      "name": "default"
+    }
+  }
+}

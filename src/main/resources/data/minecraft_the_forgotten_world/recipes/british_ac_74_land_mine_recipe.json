@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:sand"
+    },
+    "b": {
+      "item": "minecraft_the_forgotten_world:bucket_of_gunpowder"
+    },
+    "c": {
+      "item": "minecraft:calibrated_sculk_sensor"
+    }
+  },
+  "result": {
+    "item": "minecraft_the_forgotten_world:british_ac_79_land_mine",
+    "count": 1
+  }
+}

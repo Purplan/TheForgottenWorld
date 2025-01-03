@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:diamond_sword"
+  },
+  "base": {
+    "item": "minecraft:diamond"
+  },
+  "addition": {
+    "item": "minecraft_the_forgotten_world:bucket_of_radioactive_mass"
+  },
+  "result": {
+    "item": "minecraft_the_forgotten_world:radioactive_sword"
+  }
+}

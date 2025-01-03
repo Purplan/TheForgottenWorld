@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "minecraft_the_forgotten_world:blocks/british_ac_79_land_mine",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft_the_forgotten_world:british_ac_79_land_mine"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Radioactive Effect",
+    "icon": "incessantblabber_radioactive_symbol",
+    "color": {
+      "value": -256,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "onStarted": {
+      "name": "RadioactiveEffectEffectStartedapplied"
+    }
+  }
+}

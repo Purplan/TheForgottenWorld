@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft_the_forgotten_world:custom/ukflag",
+  "textures": {
+    "all": "minecraft_the_forgotten_world:block/flag_of_the_united_kingdom_1-2.svg",
+    "particle": "minecraft_the_forgotten_world:block/flag_of_the_united_kingdom_1-2.svg",
+    "0": "minecraft_the_forgotten_world:block/flag_of_the_united_kingdom_1-2.svg",
+    "1": "minecraft_the_forgotten_world:block/texture_1515",
+    "missing": "minecraft_the_forgotten_world:block/"
+  },
+  "render_type": "solid"
+}

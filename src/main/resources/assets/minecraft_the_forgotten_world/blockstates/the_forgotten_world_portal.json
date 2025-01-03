@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "minecraft_the_forgotten_world:block/the_forgotten_world_portal_ew"
+    },
+    "axis=x": {
+      "model": "minecraft_the_forgotten_world:block/the_forgotten_world_portal_ns"
+    }
+  }
+}

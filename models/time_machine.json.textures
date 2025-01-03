@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "texture_11",
+        "12": "texture_12",
+        "13": "texture_13",
+        "14": "texture_14",
+        "15": "texture_15",
+        "16": "texture_16",
+        "17": "texture_17",
+        "18": "texture_18",
+        "2": "texture_2",
+        "3": "texture_3",
+        "4": "texture_4",
+        "5": "texture_5",
+        "6": "texture_6",
+        "7": "texture_7",
+        "8": "texture_8",
+        "9": "texture_9",
+        "10": "texture_10"
+      },
+      "name": "default"
+    }
+  }
+}
