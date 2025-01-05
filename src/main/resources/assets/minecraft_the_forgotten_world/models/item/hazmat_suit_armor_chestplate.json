@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft_the_forgotten_world:item/hazmat_suit_texture_body"
+  }
+}

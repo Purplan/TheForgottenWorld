@@ -18,6 +18,7 @@ import net.mcreator.minecrafttheforgottenworld.item.TheForgottenWorldItem;
 import net.mcreator.minecrafttheforgottenworld.item.TechnobladeItem;
 import net.mcreator.minecrafttheforgottenworld.item.RadioactiveWaterItem;
 import net.mcreator.minecrafttheforgottenworld.item.RadioactiveSwordItem;
+import net.mcreator.minecrafttheforgottenworld.item.HazmatSuitArmorItem;
 import net.mcreator.minecrafttheforgottenworld.item.BucketOfRadioactiveMassItem;
 import net.mcreator.minecrafttheforgottenworld.item.BucketOfGunpowderItem;
 import net.mcreator.minecrafttheforgottenworld.MinecraftTheForgottenWorldMod;
@@ -38,6 +39,10 @@ public class MinecraftTheForgottenWorldModItems {
 	public static final RegistryObject<Item> BRITISH_AC_79_LAND_MINE = block(MinecraftTheForgottenWorldModBlocks.BRITISH_AC_79_LAND_MINE);
 	public static final RegistryObject<Item> BUCKET_OF_GUNPOWDER = REGISTRY.register("bucket_of_gunpowder", () -> new BucketOfGunpowderItem());
 	public static final RegistryObject<Item> UK_FLAG = block(MinecraftTheForgottenWorldModBlocks.UK_FLAG);
+	public static final RegistryObject<Item> HAZMAT_SUIT_ARMOR_HELMET = REGISTRY.register("hazmat_suit_armor_helmet", () -> new HazmatSuitArmorItem.Helmet());
+	public static final RegistryObject<Item> HAZMAT_SUIT_ARMOR_CHESTPLATE = REGISTRY.register("hazmat_suit_armor_chestplate", () -> new HazmatSuitArmorItem.Chestplate());
+	public static final RegistryObject<Item> HAZMAT_SUIT_ARMOR_LEGGINGS = REGISTRY.register("hazmat_suit_armor_leggings", () -> new HazmatSuitArmorItem.Leggings());
+	public static final RegistryObject<Item> HAZMAT_SUIT_ARMOR_BOOTS = REGISTRY.register("hazmat_suit_armor_boots", () -> new HazmatSuitArmorItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items

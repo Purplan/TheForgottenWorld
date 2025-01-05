@@ -40,6 +40,13 @@ public class MinecraftTheForgottenWorldModTabs {
 			tabData.accept(MinecraftTheForgottenWorldModBlocks.BRITISH_AC_74_BOMB.get().asItem());
 			tabData.accept(MinecraftTheForgottenWorldModBlocks.BRITISH_AC_79_LAND_MINE.get().asItem());
 
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+
+			tabData.accept(MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_HELMET.get());
+			tabData.accept(MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_CHESTPLATE.get());
+			tabData.accept(MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_LEGGINGS.get());
+			tabData.accept(MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_BOOTS.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
 			tabData.accept(MinecraftTheForgottenWorldModItems.POLICEGUARD_SPAWN_EGG.get());

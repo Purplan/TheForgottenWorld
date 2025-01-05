@@ -3,7 +3,7 @@
     {
       "name": "RadioactiveWater",
       "type": "fluid",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "radioactive_water",
       "metadata": {
@@ -135,7 +135,7 @@
     {
       "name": "RadioActivePotionRecipe",
       "type": "recipe",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "radio_active_potion_recipe",
       "metadata": {
@@ -663,6 +663,56 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "HazmatSuitArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_helmet.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_leggings.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_chestplate.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/HazmatSuitArmorItem.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "BiomeRadioactiveProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biome_radioactive_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/BiomeRadioactiveProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -716,14 +766,17 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_chestplate": "Hazmat Suit Chestplate",
       "death.attack.radioactive_water_damage.player": "%1$s died whilst trying to escape %2$s",
       "item.minecraft_the_forgotten_world.technoblade.desc": "\"Mega Walls\" by Technoblade",
       "advancements.touch_grass.descr": "Get 5 or more netherite blocks",
       "block.minecraft_the_forgotten_world.uranium": "Uranium Ore",
       "item.minecraft.lingering_potion.effect.radioactive_potion": "Lingering Potion of Radioactive Potion",
       "block.minecraft_the_forgotten_world.time_machine": "Time Machine",
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_boots": "Hazmat Suit Boots",
       "advancements.touch_grass.title": "Touch Grass",
       "item.minecraft.tipped_arrow.effect.radioactive_potion": "Arrow of Radioactive Potion",
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_leggings": "Hazmat Suit Leggings",
       "block.minecraft_the_forgotten_world.british_ac_74_bomb": "British AC-74 Bomb",
       "block.minecraft_the_forgotten_world.usa_flag": "US Flag",
       "block.minecraft_the_forgotten_world.uk_flag": "UK Flag",
@@ -735,6 +788,7 @@
       "block.minecraft_the_forgotten_world.radioactive_water": "Radioactive Water",
       "death.attack.radioactive_water_damage": "%1$s died of radioactive inhaling",
       "item.minecraft_the_forgotten_world.radioactive_water_bucket": "Radioactive Water Bucket",
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_helmet": "Hazmat Suit Helmet",
       "entity.minecraft_the_forgotten_world.policeguard": "Police Guard",
       "gui.minecraft_the_forgotten_world.time_machine_gui.button_source_time": "Source Time",
       "advancements.a_sus_time.descr": "Enter the dimension \"The Forgotten World\"",

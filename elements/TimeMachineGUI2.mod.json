@@ -1,0 +1,67 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_the_american_war_2039",
+          "text": "The American War - 2039",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TimeMachineGUITheAmericanWarPress2"
+          },
+          "width": 144,
+          "height": 20,
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_self_destruct",
+          "text": "Self Destruct",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TimeMachineGUISelfDestructPress"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 166,
+          "y": 175
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_source_time",
+          "text": "Source Time",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TimeMachineSourceTP"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 172,
+          "y": 152
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
