@@ -33,10 +33,10 @@ public class BiomeRadioactiveProcedureProcedure {
 		if (entity == null)
 			return;
 		if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("minecraft_the_forgotten_world:radioactive_oak_biome"))) {
-			if (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_BOOTS.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_LEGGINGS.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_CHESTPLATE.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_HELMET.get())) {
+			if (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_BOOTS.get()
+					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_LEGGINGS.get()
+					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_CHESTPLATE.get()
+					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == MinecraftTheForgottenWorldModItems.HAZMAT_SUIT_ARMOR_HELMET.get())) {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Worked"), false);
 			}
