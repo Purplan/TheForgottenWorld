@@ -8,13 +8,13 @@
       "registry_name": "radioactive_water",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/fluid/RadioactiveWaterFluid.java",
           "src/main/java/net/mcreator/minecrafttheforgottenworld/fluid/types/RadioactiveWaterFluidType.java",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/RadioactiveWaterBlock.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/radioactive_water_bucket.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/RadioactiveWaterItem.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/radioactive_water.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/radioactive_water.json"
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/RadioactiveWaterBlock.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/radioactive_water.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/fluid/RadioactiveWaterFluid.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/RadioactiveWaterItem.java"
         ]
       }
     },
@@ -30,7 +30,8 @@
           "src/main/resources/data/minecraft_the_forgotten_world/worldgen/biome/radioactive_oak_biome.json",
           "src/main/resources/data/minecraft_the_forgotten_world/worldgen/configured_feature/radioactive_oak_biome_tree.json"
         ]
-      }
+      },
+      "path": "~/RadioActiveBiome"
     },
     {
       "name": "TheForgottenWorld",
@@ -152,8 +153,8 @@
       "registry_name": "bucket_of_radioactive_mass",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/bucket_of_radioactive_mass.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/BucketOfRadioactiveMassItem.java"
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/BucketOfRadioactiveMassItem.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/bucket_of_radioactive_mass.json"
         ]
       }
     },
@@ -313,9 +314,9 @@
       "registry_name": "time_machine_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/inventory/TimeMachineGUIMenu.java",
           "src/main/java/net/mcreator/minecrafttheforgottenworld/network/TimeMachineGUIButtonMessage.java",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/client/gui/TimeMachineGUIScreen.java",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/inventory/TimeMachineGUIMenu.java"
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/client/gui/TimeMachineGUIScreen.java"
         ]
       }
     },
@@ -361,9 +362,9 @@
       "registry_name": "policeguard",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/entity/PoliceguardEntity.java",
           "src/main/java/net/mcreator/minecrafttheforgottenworld/client/renderer/PoliceguardRenderer.java",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/policeguard_spawn_egg.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/entity/PoliceguardEntity.java"
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/policeguard_spawn_egg.json"
         ]
       }
     },
@@ -393,11 +394,11 @@
       "registry_name": "usa_flag",
       "metadata": {
         "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/usa_flag.json",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/usa_flag.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/usa_flag.json",
           "src/main/java/net/mcreator/minecrafttheforgottenworld/block/USAFlagBlock.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/usa_flag.json",
-          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/usa_flag.json"
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/usa_flag.json"
         ]
       }
     },
@@ -409,14 +410,14 @@
       "registry_name": "uranium",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/UraniumBlock.java",
-          "src/main/resources/data/minecraft_the_forgotten_world/forge/biome_modifier/uranium_biome_modifier.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/uranium.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/uranium.json",
-          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/placed_feature/uranium.json",
           "src/main/resources/data/minecraft_the_forgotten_world/worldgen/configured_feature/uranium.json",
           "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/uranium.json",
-          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/uranium.json"
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/uranium.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/placed_feature/uranium.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/forge/biome_modifier/uranium_biome_modifier.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/UraniumBlock.java",
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/uranium.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/uranium.json"
         ]
       }
     },
@@ -441,11 +442,11 @@
       "registry_name": "british_ac_74_bomb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/british_ac_74_bomb.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/british_ac_74_bomb.json",
           "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/british_ac_74_bomb.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/BritishAC74BombBlock.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/british_ac_74_bomb.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/BritishAC74BombBlock.java"
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/british_ac_74_bomb.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/british_ac_74_bomb.json"
         ]
       }
     },
@@ -517,11 +518,11 @@
       "registry_name": "british_ac_79_land_mine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/british_ac_79_land_mine.json",
           "src/main/java/net/mcreator/minecrafttheforgottenworld/block/BritishAC79LandMineBlock.java",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/british_ac_79_land_mine.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/british_ac_79_land_mine.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/british_ac_79_land_mine.json",
           "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/british_ac_79_land_mine.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/british_ac_79_land_mine.json"
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/british_ac_79_land_mine.json"
         ]
       }
     },
@@ -597,8 +598,8 @@
       "registry_name": "bucket_of_gunpowder",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/bucket_of_gunpowder.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/BucketOfGunpowderItem.java"
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/BucketOfGunpowderItem.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/bucket_of_gunpowder.json"
         ]
       }
     },
@@ -646,11 +647,11 @@
       "registry_name": "uk_flag",
       "metadata": {
         "files": [
-          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/uk_flag.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/uk_flag.json",
-          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/uk_flag.json",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/uk_flag.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/UKFlagBlock.java"
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/uk_flag.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/UKFlagBlock.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/uk_flag.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/uk_flag.json"
         ]
       }
     },
@@ -672,23 +673,42 @@
       "registry_name": "hazmat_suit_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_helmet.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_boots.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/HazmatSuitArmorItem.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_leggings.json",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_chestplate.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/HazmatSuitArmorItem.java",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_boots.json"
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/hazmat_suit_armor_helmet.json"
         ]
       }
     },
     {
-      "name": "BiomeRadioactiveProcedure",
+      "name": "IsWearingHazmatSuitProcedure",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "biome_radioactive_procedure",
+      "registry_name": "is_wearing_hazmat_suit_procedure",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/BiomeRadioactiveProcedureProcedure.java"
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/IsWearingHazmatSuitProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RadioActiveBiome"
+    },
+    {
+      "name": "DamageWithoutHazmatSuit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_without_hazmat_suit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/DamageWithoutHazmatSuitProcedure.java"
         ],
         "dependencies": [
           {
@@ -712,10 +732,18 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/RadioActiveBiome"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "is_wearing_hazmat_suit",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
   "sound_elements": [
     {
       "name": "log1",
@@ -757,8 +785,8 @@
       "~CUSTOM:RadioactiveSword"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.GRASS",
-      "~Blocks.STONE#0"
+      "~Blocks.STONE#0",
+      "~Blocks.GRASS"
     ],
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:Technoblade"
@@ -814,7 +842,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "RadioActiveBiome",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "minecraft_the_forgotten_world",
