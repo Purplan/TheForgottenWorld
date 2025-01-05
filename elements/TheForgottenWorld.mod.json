@@ -11,6 +11,9 @@
       },
       {
         "value": "birch_forest"
+      },
+      {
+        "value": "CUSTOM:RadioactiveOakBiome"
       }
     ],
     "worldGenType": "Normal world gen",

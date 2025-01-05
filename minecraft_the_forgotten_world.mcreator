@@ -3,7 +3,7 @@
     {
       "name": "RadioactiveWater",
       "type": "fluid",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "radioactive_water",
       "metadata": {
@@ -26,9 +26,9 @@
       "registry_name": "radioactive_oak_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/configured_feature/radioactive_oak_biome_tree.json",
           "src/main/resources/data/minecraft_the_forgotten_world/worldgen/placed_feature/radioactive_oak_biome_tree.json",
-          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/biome/radioactive_oak_biome.json"
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/biome/radioactive_oak_biome.json",
+          "src/main/resources/data/minecraft_the_forgotten_world/worldgen/configured_feature/radioactive_oak_biome_tree.json"
         ]
       }
     },
@@ -40,17 +40,17 @@
       "registry_name": "the_forgotten_world",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/dimension/TheForgottenWorldDimension.java",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/teleporter/TheForgottenWorldPortalShape.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/TheForgottenWorldItem.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/block/the_forgotten_world_portal_ew.json",
-          "src/main/resources/data/minecraft_the_forgotten_world/dimension/the_forgotten_world.json",
           "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/the_forgotten_world_portal.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/teleporter/TheForgottenWorldTeleporter.java",
-          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/the_forgotten_world.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/TheForgottenWorldPortalBlock.java",
-          "src/main/resources/data/minecraft_the_forgotten_world/dimension_type/the_forgotten_world.json",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/block/the_forgotten_world_portal_ns.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/item/TheForgottenWorldItem.java"
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/TheForgottenWorldPortalBlock.java",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/the_forgotten_world.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/teleporter/TheForgottenWorldPortalShape.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/teleporter/TheForgottenWorldTeleporter.java",
+          "src/main/resources/data/minecraft_the_forgotten_world/dimension_type/the_forgotten_world.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/dimension/TheForgottenWorldDimension.java",
+          "src/main/resources/data/minecraft_the_forgotten_world/dimension/the_forgotten_world.json"
         ]
       }
     },
@@ -135,7 +135,7 @@
     {
       "name": "RadioActivePotionRecipe",
       "type": "recipe",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "radio_active_potion_recipe",
       "metadata": {
@@ -757,6 +757,7 @@
       "~CUSTOM:RadioactiveSword"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.GRASS",
       "~Blocks.STONE#0"
     ],
     "ITEMS:minecraft:music_discs": [
