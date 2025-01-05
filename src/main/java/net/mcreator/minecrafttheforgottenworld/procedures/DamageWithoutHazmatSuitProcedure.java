@@ -7,11 +7,14 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecrafttheforgottenworld.network.MinecraftTheForgottenWorldModVariables;
+import net.mcreator.minecrafttheforgottenworld.MinecraftTheForgottenWorldMod;
 
 import javax.annotation.Nullable;
 
@@ -31,10 +34,49 @@ public class DamageWithoutHazmatSuitProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("minecraft_the_forgotten_world:radioactive_oak_biome"))) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(
-						("Hazmat suit: " + (entity.getCapability(MinecraftTheForgottenWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MinecraftTheForgottenWorldModVariables.PlayerVariables())).is_wearing_hazmat_suit)), false);
+		if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("minecraft_the_forgotten_world:radioactive_oak_biome"))
+				&& !(entity.getCapability(MinecraftTheForgottenWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MinecraftTheForgottenWorldModVariables.PlayerVariables())).is_wearing_hazmat_suit) {
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))), 2);
+			MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+						2);
+			});
+			MinecraftTheForgottenWorldMod.queueServerWork(120, () -> {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+						2);
+			});
+			MinecraftTheForgottenWorldMod.queueServerWork(180, () -> {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+						2);
+			});
+			MinecraftTheForgottenWorldMod.queueServerWork(240, () -> {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+						2);
+				MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
+					entity.hurt(
+							new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+							2);
+					MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
+						entity.hurt(new DamageSource(
+								world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))), 2);
+						MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
+							entity.hurt(
+									new DamageSource(
+											world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+									2);
+							MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
+								entity.hurt(new DamageSource(
+										world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))), 2);
+								MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
+									entity.hurt(new DamageSource(
+											world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+											2);
+								});
+							});
+						});
+					});
+				});
+			});
 		}
 	}
 }
