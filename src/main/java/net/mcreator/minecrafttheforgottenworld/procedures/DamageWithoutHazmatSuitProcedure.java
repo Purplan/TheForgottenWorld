@@ -14,9 +14,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecrafttheforgottenworld.network.MinecraftTheForgottenWorldModVariables;
-import net.mcreator.minecrafttheforgottenworld.MinecraftTheForgottenWorldMod;
 
 import javax.annotation.Nullable;
+
+import java.util.Calendar;
 
 @Mod.EventBusSubscriber
 public class DamageWithoutHazmatSuitProcedure {
@@ -36,47 +37,10 @@ public class DamageWithoutHazmatSuitProcedure {
 			return;
 		if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("minecraft_the_forgotten_world:radioactive_oak_biome"))
 				&& !(entity.getCapability(MinecraftTheForgottenWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MinecraftTheForgottenWorldModVariables.PlayerVariables())).is_wearing_hazmat_suit) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))), 2);
-			MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
+			if (Calendar.getInstance().get(Calendar.SECOND) % 3 == 0) {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
 						2);
-			});
-			MinecraftTheForgottenWorldMod.queueServerWork(120, () -> {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
-						2);
-			});
-			MinecraftTheForgottenWorldMod.queueServerWork(180, () -> {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
-						2);
-			});
-			MinecraftTheForgottenWorldMod.queueServerWork(240, () -> {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
-						2);
-				MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
-					entity.hurt(
-							new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
-							2);
-					MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
-						entity.hurt(new DamageSource(
-								world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))), 2);
-						MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
-							entity.hurt(
-									new DamageSource(
-											world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
-									2);
-							MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
-								entity.hurt(new DamageSource(
-										world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))), 2);
-								MinecraftTheForgottenWorldMod.queueServerWork(60, () -> {
-									entity.hurt(new DamageSource(
-											world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
-											2);
-								});
-							});
-						});
-					});
-				});
-			});
+			}
 		}
 	}
 }
