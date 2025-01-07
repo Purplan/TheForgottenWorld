@@ -55,6 +55,8 @@ public class MinecraftTheForgottenWorldModTabs {
 
 			tabData.accept(MinecraftTheForgottenWorldModItems.URANIUM_INGOT.get());
 			tabData.accept(MinecraftTheForgottenWorldModItems.BUCKET_OF_GUNPOWDER.get());
+			tabData.accept(MinecraftTheForgottenWorldModItems.RUBBER_NUGGET_ITEM.get());
+			tabData.accept(MinecraftTheForgottenWorldModItems.RUBBER_ITEM.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
@@ -63,6 +65,7 @@ public class MinecraftTheForgottenWorldModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 
 			tabData.accept(MinecraftTheForgottenWorldModBlocks.URANIUM.get().asItem());
+			tabData.accept(MinecraftTheForgottenWorldModBlocks.RUBBER_FIG_PLANT.get().asItem());
 
 		}
 	}

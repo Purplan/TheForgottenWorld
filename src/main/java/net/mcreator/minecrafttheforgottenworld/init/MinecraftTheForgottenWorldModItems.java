@@ -16,6 +16,8 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.minecrafttheforgottenworld.item.UraniumIngotItem;
 import net.mcreator.minecrafttheforgottenworld.item.TheForgottenWorldItem;
 import net.mcreator.minecrafttheforgottenworld.item.TechnobladeItem;
+import net.mcreator.minecrafttheforgottenworld.item.RubberNuggetItemItem;
+import net.mcreator.minecrafttheforgottenworld.item.RubberItemItem;
 import net.mcreator.minecrafttheforgottenworld.item.RadioactiveWaterItem;
 import net.mcreator.minecrafttheforgottenworld.item.RadioactiveSwordItem;
 import net.mcreator.minecrafttheforgottenworld.item.HazmatSuitArmorItem;
@@ -43,6 +45,9 @@ public class MinecraftTheForgottenWorldModItems {
 	public static final RegistryObject<Item> HAZMAT_SUIT_ARMOR_CHESTPLATE = REGISTRY.register("hazmat_suit_armor_chestplate", () -> new HazmatSuitArmorItem.Chestplate());
 	public static final RegistryObject<Item> HAZMAT_SUIT_ARMOR_LEGGINGS = REGISTRY.register("hazmat_suit_armor_leggings", () -> new HazmatSuitArmorItem.Leggings());
 	public static final RegistryObject<Item> HAZMAT_SUIT_ARMOR_BOOTS = REGISTRY.register("hazmat_suit_armor_boots", () -> new HazmatSuitArmorItem.Boots());
+	public static final RegistryObject<Item> RUBBER_FIG_PLANT = block(MinecraftTheForgottenWorldModBlocks.RUBBER_FIG_PLANT);
+	public static final RegistryObject<Item> RUBBER_NUGGET_ITEM = REGISTRY.register("rubber_nugget_item", () -> new RubberNuggetItemItem());
+	public static final RegistryObject<Item> RUBBER_ITEM = REGISTRY.register("rubber_item", () -> new RubberItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

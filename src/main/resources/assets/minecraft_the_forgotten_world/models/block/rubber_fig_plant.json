@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "minecraft_the_forgotten_world:block/rubber_plant_texture",
+    "particle": "minecraft:block/green_terracotta"
+  },
+  "render_type": "cutout"
+}
