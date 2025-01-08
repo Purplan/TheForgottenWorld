@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:RubberItem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RubberItem"
+      },
+      {
+        "value": "CUSTOM:RubberItem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RubberItem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HazmatSuitArmor.boots"
+    },
+    "name": "hazmat_suit_boots_recipe",
+    "namespace": "mod"
+  }
+}

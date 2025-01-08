@@ -791,6 +791,54 @@
           "src/main/resources/data/minecraft_the_forgotten_world/recipes/rubber_recipe.json"
         ]
       }
+    },
+    {
+      "name": "HazmatSuitRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HazmatSuitBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HazmatSuitLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HazmatSuitHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_helmet_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -900,52 +948,52 @@
       "item_group.minecraft_the_forgotten_world.uk": "UK"
     },
     "es_ar": {
-      "item.minecraft_the_forgotten_world.hazmat_suit_armor_chestplate": "Hazmat Suit Chestplate",
-      "death.attack.radioactive_water_damage.player": "%1$s died whilst trying to escape %2$s",
-      "item.minecraft_the_forgotten_world.technoblade.desc": "\"Mega Walls\" by Technoblade",
-      "advancements.touch_grass.descr": "Get 5 or more netherite blocks",
-      "block.minecraft_the_forgotten_world.uranium": "Uranium Ore",
-      "item.minecraft.lingering_potion.effect.radioactive_potion": "Lingering Potion of Radioactive Potion",
-      "block.minecraft_the_forgotten_world.time_machine": "Time Machine",
-      "item.minecraft_the_forgotten_world.hazmat_suit_armor_boots": "Hazmat Suit Boots",
-      "advancements.touch_grass.title": "Touch Grass",
-      "item.minecraft.tipped_arrow.effect.radioactive_potion": "Arrow of Radioactive Potion",
-      "item.minecraft_the_forgotten_world.hazmat_suit_armor_leggings": "Hazmat Suit Leggings",
-      "block.minecraft_the_forgotten_world.british_ac_74_bomb": "British AC-74 Bomb",
-      "block.minecraft_the_forgotten_world.usa_flag": "US Flag",
-      "block.minecraft_the_forgotten_world.uk_flag": "UK Flag",
-      "gui.minecraft_the_forgotten_world.time_machine_gui.button_self_destruct": "Self Destruct",
-      "biome.minecraft_the_forgotten_world.radioactive_oak_biome": "Radioactive Oak Biome",
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_chestplate": "Peto de traje de materiales peligrosos",
+      "death.attack.radioactive_water_damage.player": "%1$s murió mientras intentaba escapar de %2$s",
+      "item.minecraft_the_forgotten_world.technoblade.desc": "\"Mega Walls\" de Technoblade",
+      "advancements.touch_grass.descr": "Consigue 5 o más bloques netherite",
+      "block.minecraft_the_forgotten_world.uranium": "Mineral de uranio",
+      "item.minecraft.lingering_potion.effect.radioactive_potion": "Poción persistente de poción radiactiva",
+      "block.minecraft_the_forgotten_world.time_machine": "maquina del tiempo",
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_boots": "Botas de traje de materiales peligrosos",
+      "advancements.touch_grass.title": "Tocar la hierba",
+      "item.minecraft.tipped_arrow.effect.radioactive_potion": "Flecha de poción radiactiva",
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_leggings": "Traje de materiales peligrosos Leggings",
+      "block.minecraft_the_forgotten_world.british_ac_74_bomb": "Bomba británica AC-74",
+      "block.minecraft_the_forgotten_world.usa_flag": "Bandera de Estados Unidos",
+      "block.minecraft_the_forgotten_world.uk_flag": "Bandera del Reino Unido",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_self_destruct": "Autodestrucción",
+      "biome.minecraft_the_forgotten_world.radioactive_oak_biome": "Bioma de roble radiactivo",
       "subtitles.technoblade": "",
-      "item.minecraft_the_forgotten_world.technoblade": "\"Mega Walls\" by Technoblade",
-      "advancements.a_sus_time.title": "A Sus Time",
-      "item.minecraft_the_forgotten_world.rubber_nugget_item": "Rubber Nugget",
-      "block.minecraft_the_forgotten_world.radioactive_water": "Radioactive Water",
-      "death.attack.radioactive_water_damage": "%1$s died of radioactive inhaling",
-      "item.minecraft_the_forgotten_world.radioactive_water_bucket": "Radioactive Water Bucket",
-      "item.minecraft_the_forgotten_world.hazmat_suit_armor_helmet": "Hazmat Suit Helmet",
-      "item.minecraft_the_forgotten_world.rubber_item": "Rubber",
-      "entity.minecraft_the_forgotten_world.policeguard": "Police Guard",
-      "gui.minecraft_the_forgotten_world.time_machine_gui.button_source_time": "Source Time",
-      "advancements.a_sus_time.descr": "Enter the dimension \"The Forgotten World\"",
-      "fluid.minecraft_the_forgotten_world.radioactive_water": "Radioactive Water",
-      "gui.minecraft_the_forgotten_world.time_machine_gui.button_the_american_war_2039": "The American War - 2039",
-      "block.minecraft_the_forgotten_world.rubber_fig_plant": "Rubber Fig Plant",
-      "item.minecraft.splash_potion.effect.radioactive_potion": "Splash Potion of Radioactive Potion",
-      "item_group.minecraft_the_forgotten_world.usa": "USA",
-      "effect.minecraft_the_forgotten_world.radioactive_effect": "Radioactive Effect",
-      "item.minecraft_the_forgotten_world.bucket_of_radioactive_mass": "Bucket Of Radioactive Mass",
-      "item.minecraft.potion.effect.radioactive_potion": "Potion of Radioactive Potion",
-      "item.minecraft_the_forgotten_world.uranium_ingot": "Uranium Ingot",
-      "item.minecraft_the_forgotten_world.policeguard_spawn_egg": "Police Guard Spawn Egg",
+      "item.minecraft_the_forgotten_world.technoblade": "\"Mega Walls\" de Technoblade",
+      "advancements.a_sus_time.title": "Un tiempo sus",
+      "item.minecraft_the_forgotten_world.rubber_nugget_item": "pepita de goma",
+      "block.minecraft_the_forgotten_world.radioactive_water": "Agua radiactiva",
+      "death.attack.radioactive_water_damage": "%1$s murió por inhalación radiactiva",
+      "item.minecraft_the_forgotten_world.radioactive_water_bucket": "Cubo de agua radiactiva",
+      "item.minecraft_the_forgotten_world.hazmat_suit_armor_helmet": "Casco de traje de materiales peligrosos",
+      "item.minecraft_the_forgotten_world.rubber_item": "Goma",
+      "entity.minecraft_the_forgotten_world.policeguard": "guardia policial",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_source_time": "Hora de origen",
+      "advancements.a_sus_time.descr": "Entra en la dimensión \"The Forgotten World\"",
+      "fluid.minecraft_the_forgotten_world.radioactive_water": "Agua radiactiva",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_the_american_war_2039": "La guerra americana - 2039",
+      "block.minecraft_the_forgotten_world.rubber_fig_plant": "Planta de higuera de caucho",
+      "item.minecraft.splash_potion.effect.radioactive_potion": "Poción de salpicadura de poción radiactiva",
+      "item_group.minecraft_the_forgotten_world.usa": "EE.UU",
+      "effect.minecraft_the_forgotten_world.radioactive_effect": "Efecto radiactivo",
+      "item.minecraft_the_forgotten_world.bucket_of_radioactive_mass": "Cubo de masa radiactiva",
+      "item.minecraft.potion.effect.radioactive_potion": "Poción de poción radiactiva",
+      "item.minecraft_the_forgotten_world.uranium_ingot": "Lingote de uranio",
+      "item.minecraft_the_forgotten_world.policeguard_spawn_egg": "Huevo de generación de guardia policial",
       "subtitles.log1": "",
-      "item.minecraft_the_forgotten_world.the_forgotten_world": "Teleportation Stick",
-      "gui.minecraft_the_forgotten_world.time_machine_gui.button_the_american_war": "The American War",
-      "block.minecraft_the_forgotten_world.british_ac_79_land_mine": "British AC-79 Land Mine",
-      "item.minecraft_the_forgotten_world.radioactive_sword": "Radioactive Sword",
-      "death.attack.radioactive_water_damage.item": "%1$s was killed by %2$s using %3$s",
-      "item.minecraft_the_forgotten_world.bucket_of_gunpowder": "Bucket Of Gunpowder",
-      "item_group.minecraft_the_forgotten_world.uk": "UK"
+      "item.minecraft_the_forgotten_world.the_forgotten_world": "Palo de teletransportación",
+      "gui.minecraft_the_forgotten_world.time_machine_gui.button_the_american_war": "La guerra americana",
+      "block.minecraft_the_forgotten_world.british_ac_79_land_mine": "Mina terrestre británica AC-79",
+      "item.minecraft_the_forgotten_world.radioactive_sword": "Espada radiactiva",
+      "death.attack.radioactive_water_damage.item": "%1$s fue asesinado por %2$s usando %3$s",
+      "item.minecraft_the_forgotten_world.bucket_of_gunpowder": "Cubo de pólvora",
+      "item_group.minecraft_the_forgotten_world.uk": "Reino Unido"
     }
   },
   "foldersRoot": {

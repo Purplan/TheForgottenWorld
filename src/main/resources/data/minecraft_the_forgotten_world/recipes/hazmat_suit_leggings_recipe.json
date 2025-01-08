@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "b b",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "item": "minecraft_the_forgotten_world:rubber_item"
+    }
+  },
+  "result": {
+    "item": "minecraft_the_forgotten_world:hazmat_suit_armor_leggings",
+    "count": 1
+  }
+}
