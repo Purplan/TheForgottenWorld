@@ -1,25 +1,13 @@
 package net.mcreator.minecrafttheforgottenworld.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Checkbox;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.minecrafttheforgottenworld.world.inventory.SleepingPodGUIMenu;
-
-import java.util.HashMap;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class SleepingPodGUIScreen extends AbstractContainerScreen<SleepingPodGUIMenu> {
+
 	private final static HashMap<String, Object> guistate = SleepingPodGUIMenu.guistate;
+
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+
 	Checkbox SleepingPodRadioactiveProtection;
 
 	public SleepingPodGUIScreen(SleepingPodGUIMenu container, Inventory inventory, Component text) {
@@ -38,8 +26,11 @@ public class SleepingPodGUIScreen extends AbstractContainerScreen<SleepingPodGUI
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
+
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -47,7 +38,9 @@ public class SleepingPodGUIScreen extends AbstractContainerScreen<SleepingPodGUI
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -57,6 +50,7 @@ public class SleepingPodGUIScreen extends AbstractContainerScreen<SleepingPodGUI
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -67,8 +61,11 @@ public class SleepingPodGUIScreen extends AbstractContainerScreen<SleepingPodGUI
 	@Override
 	public void init() {
 		super.init();
+
 		SleepingPodRadioactiveProtection = new Checkbox(this.leftPos + 22, this.topPos + 15, 20, 20, Component.translatable("gui.minecraft_the_forgotten_world.sleeping_pod_gui.SleepingPodRadioactiveProtection"), false);
+
 		guistate.put("checkbox:SleepingPodRadioactiveProtection", SleepingPodRadioactiveProtection);
 		this.addRenderableWidget(SleepingPodRadioactiveProtection);
 	}
+
 }
