@@ -265,7 +265,6 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/time_machine.json",
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/entity/TimeMachineBlockEntity.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/time_machine.json",
           "src/main/java/net/mcreator/minecrafttheforgottenworld/block/TimeMachineBlock.java",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/block/time_machine.json",
@@ -834,6 +833,109 @@
           "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineSelfDestructWarningProcedure.java"
         ],
         "dependencies": []
+      }
+    },
+    {
+      "name": "SleepingPodGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_pod_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/client/gui/SleepingPodGUIScreen.java",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/world/inventory/SleepingPodGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "HazmatSuitBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SleepingPod",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_pod",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/loot_tables/blocks/sleeping_pod.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/block/sleeping_pod.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/sleeping_pod.json",
+          "src/main/resources/assets/minecraft_the_forgotten_world/models/item/sleeping_pod.json",
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/block/SleepingPodBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "HazmatSuitRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SleepingPodGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleeping_pod_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/SleepingPodGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HazmatSuitHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HazmatSuitLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmat_suit_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_leggings_recipe.json"
+        ]
       }
     }
   ],
