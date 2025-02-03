@@ -2,9 +2,9 @@
   "_fv": 69,
   "_type": "gui",
   "definition": {
-    "type": 1,
-    "width": 200,
-    "height": 200,
+    "type": 0,
+    "width": 180,
+    "height": 50,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 18,
     "renderBgLayer": true,
@@ -15,11 +15,14 @@
         "data": {
           "name": "SleepingPodRadioactiveProtection",
           "text": "Radioactive Protection",
-          "x": 120,
-          "y": 28
+          "x": 146,
+          "y": 110
         }
       }
     ],
+    "onTick": {
+      "name": "SleepingPodGUIWhileThisGUIIsOpenTick"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

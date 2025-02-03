@@ -68,6 +68,7 @@ public class MinecraftTheForgottenWorldModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			if (!event.isWasDeath()) {
 				clone.is_wearing_hazmat_suit = original.is_wearing_hazmat_suit;
+				clone.has_radioactivity_protection = original.has_radioactivity_protection;
 			}
 		}
 	}
@@ -104,6 +105,7 @@ public class MinecraftTheForgottenWorldModVariables {
 
 	public static class PlayerVariables {
 		public boolean is_wearing_hazmat_suit = false;
+		public boolean has_radioactivity_protection = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +115,14 @@ public class MinecraftTheForgottenWorldModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("is_wearing_hazmat_suit", is_wearing_hazmat_suit);
+			nbt.putBoolean("has_radioactivity_protection", has_radioactivity_protection);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
 			is_wearing_hazmat_suit = nbt.getBoolean("is_wearing_hazmat_suit");
+			has_radioactivity_protection = nbt.getBoolean("has_radioactivity_protection");
 		}
 	}
 
@@ -144,6 +148,7 @@ public class MinecraftTheForgottenWorldModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.is_wearing_hazmat_suit = message.data.is_wearing_hazmat_suit;
+					variables.has_radioactivity_protection = message.data.has_radioactivity_protection;
 				}
 			});
 			context.setPacketHandled(true);
