@@ -793,49 +793,6 @@
       }
     },
     {
-      "name": "TimeMachineOnTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_machine_on_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineOnTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TimeMachineSelfDestructWarning",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_machine_self_destruct_warning",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineSelfDestructWarningProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "SleepingPodGUI",
       "type": "gui",
       "compiles": true,
