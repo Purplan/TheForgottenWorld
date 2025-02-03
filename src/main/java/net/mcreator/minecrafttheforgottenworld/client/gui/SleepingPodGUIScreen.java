@@ -29,8 +29,8 @@ public class SleepingPodGUIScreen extends AbstractContainerScreen<SleepingPodGUI
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 180;
-		this.imageHeight = 50;
+		this.imageWidth = 200;
+		this.imageHeight = 200;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("minecraft_the_forgotten_world:textures/screens/sleeping_pod_gui.png");
@@ -67,7 +67,7 @@ public class SleepingPodGUIScreen extends AbstractContainerScreen<SleepingPodGUI
 	@Override
 	public void init() {
 		super.init();
-		SleepingPodRadioactiveProtection = new Checkbox(this.leftPos + 22, this.topPos + 15, 20, 20, Component.translatable("gui.minecraft_the_forgotten_world.sleeping_pod_gui.SleepingPodRadioactiveProtection"), false);
+		SleepingPodRadioactiveProtection = new Checkbox(this.leftPos + 6, this.topPos + 8, 20, 20, Component.translatable("gui.minecraft_the_forgotten_world.sleeping_pod_gui.SleepingPodRadioactiveProtection"), false);
 		guistate.put("checkbox:SleepingPodRadioactiveProtection", SleepingPodRadioactiveProtection);
 		this.addRenderableWidget(SleepingPodRadioactiveProtection);
 	}

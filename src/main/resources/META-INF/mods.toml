@@ -27,6 +27,18 @@ authors="noahj, MCreator"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.minecraft_the_forgotten_world]]
+    modId="create"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.minecraft_the_forgotten_world]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 # Start of user code block dependencies configuration
