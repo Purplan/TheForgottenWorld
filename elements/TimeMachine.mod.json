@@ -39,7 +39,7 @@
       "fixedValue": []
     },
     "hardness": 1.0,
-    "resistance": 10.0,
+    "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -61,7 +61,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 100,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -105,7 +105,7 @@
     "unbreakable": true,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "TimeMachineGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 9,
@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "TimeMachineOnTickUpdate"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

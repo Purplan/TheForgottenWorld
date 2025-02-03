@@ -27,6 +27,7 @@ import net.mcreator.minecrafttheforgottenworld.init.MinecraftTheForgottenWorldMo
 import net.mcreator.minecrafttheforgottenworld.init.MinecraftTheForgottenWorldModFluidTypes;
 import net.mcreator.minecrafttheforgottenworld.init.MinecraftTheForgottenWorldModEntities;
 import net.mcreator.minecrafttheforgottenworld.init.MinecraftTheForgottenWorldModBlocks;
+import net.mcreator.minecrafttheforgottenworld.init.MinecraftTheForgottenWorldModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -49,7 +50,7 @@ public class MinecraftTheForgottenWorldMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MinecraftTheForgottenWorldModSounds.REGISTRY.register(bus);
 		MinecraftTheForgottenWorldModBlocks.REGISTRY.register(bus);
-
+		MinecraftTheForgottenWorldModBlockEntities.REGISTRY.register(bus);
 		MinecraftTheForgottenWorldModItems.REGISTRY.register(bus);
 		MinecraftTheForgottenWorldModEntities.REGISTRY.register(bus);
 
