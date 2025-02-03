@@ -15,6 +15,7 @@ import net.mcreator.minecrafttheforgottenworld.block.USAFlagBlock;
 import net.mcreator.minecrafttheforgottenworld.block.UKFlagBlock;
 import net.mcreator.minecrafttheforgottenworld.block.TimeMachineBlock;
 import net.mcreator.minecrafttheforgottenworld.block.TheForgottenWorldPortalBlock;
+import net.mcreator.minecrafttheforgottenworld.block.SleepingPodBlock;
 import net.mcreator.minecrafttheforgottenworld.block.RubberFigPlantBlock;
 import net.mcreator.minecrafttheforgottenworld.block.RadioactiveWaterBlock;
 import net.mcreator.minecrafttheforgottenworld.block.BritishAC79LandMineBlock;
@@ -32,6 +33,7 @@ public class MinecraftTheForgottenWorldModBlocks {
 	public static final RegistryObject<Block> BRITISH_AC_79_LAND_MINE = REGISTRY.register("british_ac_79_land_mine", () -> new BritishAC79LandMineBlock());
 	public static final RegistryObject<Block> UK_FLAG = REGISTRY.register("uk_flag", () -> new UKFlagBlock());
 	public static final RegistryObject<Block> RUBBER_FIG_PLANT = REGISTRY.register("rubber_fig_plant", () -> new RubberFigPlantBlock());
+	public static final RegistryObject<Block> SLEEPING_POD = REGISTRY.register("sleeping_pod", () -> new SleepingPodBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

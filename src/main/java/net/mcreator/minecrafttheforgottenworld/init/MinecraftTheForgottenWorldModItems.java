@@ -48,6 +48,7 @@ public class MinecraftTheForgottenWorldModItems {
 	public static final RegistryObject<Item> RUBBER_FIG_PLANT = block(MinecraftTheForgottenWorldModBlocks.RUBBER_FIG_PLANT);
 	public static final RegistryObject<Item> RUBBER_NUGGET_ITEM = REGISTRY.register("rubber_nugget_item", () -> new RubberNuggetItemItem());
 	public static final RegistryObject<Item> RUBBER_ITEM = REGISTRY.register("rubber_item", () -> new RubberItemItem());
+	public static final RegistryObject<Item> SLEEPING_POD = block(MinecraftTheForgottenWorldModBlocks.SLEEPING_POD);
 
 	// Start of user code block custom items
 	// End of user code block custom items

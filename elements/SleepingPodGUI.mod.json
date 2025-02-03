@@ -1,0 +1,31 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 200,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 18,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "SleepingPodRadioactiveProtection",
+          "text": "Radioactive Protection",
+          "x": 120,
+          "y": 28
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
