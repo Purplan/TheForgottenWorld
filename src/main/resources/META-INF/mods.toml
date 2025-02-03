@@ -20,6 +20,12 @@ authors="noahj, MCreator"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.minecraft_the_forgotten_world]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 

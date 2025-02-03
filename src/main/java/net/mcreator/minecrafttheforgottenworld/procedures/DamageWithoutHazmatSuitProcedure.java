@@ -32,18 +32,16 @@ public class DamageWithoutHazmatSuitProcedure {
 		execute(null, world, x, y, z, entity);
 	}
 
-private static void execute(
-@Nullable Event event,
-LevelAccessor world,
-double x,
-double y,
-double z,
-Entity entity
-) {
-if(
-entity == null
-) return ;
-if (world.getBiome(BlockPos.containing(x,y,z)).is(new ResourceLocation("minecraft_the_forgotten_world:radioactive_oak_biome"))&&!((entity.getCapability(MinecraftTheForgottenWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-.orElse(new MinecraftTheForgottenWorldModVariables.PlayerVariables())).is_wearing_hazmat_suit||)) {if (Calendar.getInstance().get(Calendar.SECOND)%3==0) {entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))), 2);}}
-}
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("minecraft_the_forgotten_world:radioactive_oak_biome"))
+				&& !((entity.getCapability(MinecraftTheForgottenWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MinecraftTheForgottenWorldModVariables.PlayerVariables())).is_wearing_hazmat_suit
+						|| (entity.getCapability(MinecraftTheForgottenWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MinecraftTheForgottenWorldModVariables.PlayerVariables())).has_radioactivity_protection)) {
+			if (Calendar.getInstance().get(Calendar.SECOND) % 3 == 0) {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("minecraft_the_forgotten_world:radioactive_water_damage")))),
+						2);
+			}
+		}
+	}
 }

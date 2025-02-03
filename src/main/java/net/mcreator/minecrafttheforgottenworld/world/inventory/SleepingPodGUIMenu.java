@@ -85,7 +85,7 @@ public class SleepingPodGUIMenu extends AbstractContainerMenu implements Supplie
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			SleepingPodGUIWhileThisGUIIsOpenTickProcedure.execute(guistate);
+			SleepingPodGUIWhileThisGUIIsOpenTickProcedure.execute(entity, guistate);
 		}
 	}
 }
