@@ -1,11 +1,6 @@
 package net.mcreator.minecrafttheforgottenworld.procedures;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.client.gui.components.Checkbox;
-
-import net.mcreator.minecrafttheforgottenworld.network.MinecraftTheForgottenWorldModVariables;
-
-import java.util.HashMap;
+import net.minecraftforge.eventbus.api.Event;
 
 public class SleepingPodGUIWhileThisGUIIsOpenTickProcedure {
 	public static void execute(Entity entity, HashMap guistate) {

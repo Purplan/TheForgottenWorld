@@ -793,49 +793,6 @@
       }
     },
     {
-      "name": "TimeMachineOnTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_machine_on_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineOnTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TimeMachineSelfDestructWarning",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_machine_self_destruct_warning",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineSelfDestructWarningProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "SleepingPodGUI",
       "type": "gui",
       "compiles": true,
@@ -873,6 +830,36 @@
           "src/main/resources/assets/minecraft_the_forgotten_world/blockstates/sleeping_pod.json",
           "src/main/resources/assets/minecraft_the_forgotten_world/models/item/sleeping_pod.json",
           "src/main/java/net/mcreator/minecrafttheforgottenworld/block/SleepingPodBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "TimeMachineOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_machine_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     },
@@ -920,6 +907,19 @@
         "files": [
           "src/main/resources/data/minecraft_the_forgotten_world/recipes/hazmat_suit_helmet_recipe.json"
         ]
+      }
+    },
+    {
+      "name": "TimeMachineSelfDestructWarning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_machine_self_destruct_warning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecrafttheforgottenworld/procedures/TimeMachineSelfDestructWarningProcedure.java"
+        ],
+        "dependencies": []
       }
     },
     {
@@ -998,9 +998,9 @@
       "item.minecraft_the_forgotten_world.hazmat_suit_armor_chestplate": "Hazmat Suit Chestplate",
       "death.attack.radioactive_water_damage.player": "%1$s died whilst trying to escape %2$s",
       "item.minecraft_the_forgotten_world.technoblade.desc": "\"Mega Walls\" by Technoblade",
-      "block.minecraft_the_forgotten_world.uranium": "Uranium Ore",
-      "item.minecraft.lingering_potion.effect.radioactive_potion": "Lingering Potion of Radioactive Potion",
       "block.minecraft_the_forgotten_world.time_machine": "Time Machine",
+      "item.minecraft.lingering_potion.effect.radioactive_potion": "Lingering Potion of Radioactive Potion",
+      "block.minecraft_the_forgotten_world.uranium": "Uranium Ore",
       "item.minecraft.tipped_arrow.effect.radioactive_potion": "Arrow of Radioactive Potion",
       "item.minecraft_the_forgotten_world.hazmat_suit_armor_leggings": "Hazmat Suit Leggings",
       "block.minecraft_the_forgotten_world.uk_flag": "UK Flag",
@@ -1048,9 +1048,9 @@
       "item.minecraft_the_forgotten_world.hazmat_suit_armor_chestplate": "Hazmat Suit Chestplate",
       "death.attack.radioactive_water_damage.player": "%1$s died whilst trying to escape %2$s",
       "item.minecraft_the_forgotten_world.technoblade.desc": "\"Mega Walls\" by Technoblade",
-      "block.minecraft_the_forgotten_world.uranium": "Uranium Ore",
-      "item.minecraft.lingering_potion.effect.radioactive_potion": "Lingering Potion of Radioactive Potion",
       "block.minecraft_the_forgotten_world.time_machine": "Time Machine",
+      "item.minecraft.lingering_potion.effect.radioactive_potion": "Lingering Potion of Radioactive Potion",
+      "block.minecraft_the_forgotten_world.uranium": "Uranium Ore",
       "item.minecraft.tipped_arrow.effect.radioactive_potion": "Arrow of Radioactive Potion",
       "item.minecraft_the_forgotten_world.hazmat_suit_armor_leggings": "Hazmat Suit Leggings",
       "block.minecraft_the_forgotten_world.uk_flag": "UK Flag",
